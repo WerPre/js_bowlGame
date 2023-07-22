@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Catch</title>
+    <link rel="stylesheet" type="text/css" href="game.css">
+    <script src="game.js" defer></script>
+  </head>
+  <body>
+    <div id="bowl">
+      <img src="bowl_green.svg" width="80" height="50" id="green">
+      <img src="bowl_purple.svg" width="80" height="50" id="purple">
+    </div>
+    <div  id="canvas">
+      <ul>
+        <li><button id="easy" class="basic" onclick="button_clicked(this.id)" value="3">easy</button></li>
+        <li><button id="normal" class="basic"  onclick="button_clicked(this.id)" value="4">normal</button></li>
+        <li><button id="hard" class="basic" onclick="button_clicked(this.id)" value="5">hard</button></li>
+        <li><button id="play" class="basic" onclick="play()">play</button></li>
+      </ul>
+  <!--     <script>
+        function button_clicked(e){
+          document.querySelectorAll('button').forEach(element => element.className = 'basic');
+          document.getElementById(e).className = "clicked";
+        };
+      </script> -->
+      <canvas width="400" height="580"></canvas>
+    </div>
+    <div id="conteiner">
+      <div id="lifes">
+        <img src="heart.svg" width="40" height="40">
+        <img src="heart.svg" width="40" height="40">
+        <img src="heart.svg" width="40" height="40">
+      </div>
+      <h3 id="score"></h3>
+    </div>
+  </body>
+</html>

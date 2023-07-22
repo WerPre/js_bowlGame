@@ -1,0 +1,91 @@
+body {
+    background-color: rgb(23, 27, 32);
+    margin: 0;
+  }
+
+  #bowl {
+      display: none;
+  }
+  ul {
+    box-sizing: border-box;
+    position:absolute;
+    top: 50px;
+    width: 400px;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  button, .basic {
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 180px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Center_an_element */
+    margin: 10px auto;
+    border: 7px solid rgb(169, 48, 255);
+    border-radius: 20px;
+    background-color: rgba(49, 19, 83, 0.699);
+
+    text-align: center;
+    color: white;
+    font: 50px Arial, Sans-serif;
+    
+  }
+
+  button.basic:hover {
+    background-color: rgb(31, 22, 85);
+  }
+
+  button.clicked {
+    background-color: rgb(169, 48, 255);
+  }
+  #play {
+    margin-top: 150px;
+    width: 230px;
+  }
+
+/*       span {
+    color: white;
+    font: 50px Arial, Sans-serif;
+  } */
+
+  #canvas, #conteiner {
+    margin: auto auto;
+    width: 400px;
+    height: min-content;
+  }
+
+  #canvas {
+    background-color: black;
+  }
+  #conteiner {
+    background-color: rgb(36, 36, 36);
+    height: 40px;
+    width: 400px;
+    display: none;
+  }
+
+  #lifes {
+    float: left;
+    height: min-content;
+    width: fit-content;
+  }
+
+  #heart {
+    display: inline-block;
+    text-align: left;
+    height: 40px;
+    width: 40px;
+  }
+
+  #score {
+    float: right;
+    position: relative;
+    right: 0;
+    width: min-content;
+    font-size: 40px;
+    color:beige;
+    margin: 0;
+  }
